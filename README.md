@@ -12,4 +12,4 @@ Level Up: Successfully completing the sequence advances you to the next level. E
 
 Winning: Continue repeating the sequences accurately to reach the highest level possible. The game will keep track of your score, and you can compete with friends to see who can achieve the highest level.
 
-Turn Off: When you wish to stop playing, simply press the power button to turn off the game.
+Turn Off: When you wish to stop playing, simply press the power button to turn off the game 
