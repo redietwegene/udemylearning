@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul>
+      <% item.forEach(item => { %>
+        <li>
+          <strong><%= item.title %></strong>
+          <p><%= item.description %></p>
+          <a href="/edit/<%= item.id %>">Edit</a>
+          <a href="/delete/<%= item.id %>">Delete</a>
+        </li>
+      <% }); %>
+    </ul>
+    <form action="/add" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="tyitle" name="title" required>
+      <label for="description">Description:</label>
+      <textarea id="newDescription" name="description" required></textarea>
+      <button type="submit">Add Task</button>
+    </form>
+    
+</body>
+</html>

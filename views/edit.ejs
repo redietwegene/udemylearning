@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+    <form action="/edit/<%= todoItem.id %>" method="post">
+      <label for="updatedTitle">Title:</label>
+      <input type="text" id="updatedTitle" name="updatedTitle" value="<%= todoItem.title %>" required>
+      <label for="updatedDescription">Description:</label>
+      <textarea id="updatedDescription" name="updatedDescription" required><%= todoItem.description %></textarea>
+      <button type="submit">Update Task</button>
+    </form>
+    
+</body>
+</html>
